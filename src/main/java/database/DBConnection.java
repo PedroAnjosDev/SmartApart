@@ -14,7 +14,7 @@ public class DBConnection {
 
     private DBConnection() {
         try {
-            this.connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", USER, PASSWORD);
+            this.connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/SmartApart", USER, PASSWORD);
         } 
         catch (SQLException e) {
             throw new RuntimeException("Erro ao conectar", e);            
